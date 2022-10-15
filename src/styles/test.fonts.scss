@@ -1,7 +1,26 @@
+/* jetbrains-mono-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400;
-  src: local(''), url('../fonts/quicksand-v28-latin-regular.woff2') format('woff2'),
-    url('../fonts/quicksand-v28-latin-regular.woff') format('woff');
+  src: local(''),
+    url('../fonts/jetbrains-mono-v13-latin_cyrillic-regular.woff2') format('woff2'), 
+}
+
+/* jetbrains-mono-600 - latin_cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+    url('../fonts/jetbrains-mono-v13-latin_cyrillic-600.woff2') format('woff2'), 
+}
+
+/* jetbrains-mono-800 - latin_cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+    url('../fonts/jetbrains-mono-v13-latin_cyrillic-800.woff2') format('woff2'), 
 }

@@ -1,33 +1,104 @@
 @import './test.vars.scss';
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 20px;
   color: white;
-  font-family: $test-font-family;
+  font-family: $base-font-family;
   font-size: 24px;
   font-weight: 400;
   background-color: #1a1a1a;
+  gap: 15px;
 }
 
 .title {
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  font-size: 36px;
+  margin: 0;
+  font: inherit;
 }
 
-.webpack-logo {
-  display: block;
-  width: 256px;
-  margin: 60px auto;
-  animation: 5s linear 0s infinite rotating;
+.input-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  font: inherit;
+  font-size: 14px;
 }
 
-@keyframes rotating {
-  0% {
-    transform: rotate(0turn);
+.input {
+  min-width: 500px;
+  min-height: 40px;
+  margin-bottom: 15px;
+  padding: 7px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  transition: all 0.2s;
+
+  &:focus {
+    outline: $accent-color solid 3px;
   }
-  100% {
-    transform: rotate(1turn);
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  width: 516px;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.calculator-icon {
+  min-width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  background-color: $accent-color;
+  mask-image: url('../img/flame.svg');
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.form-title {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.button {
+  min-height: 40px;
+  margin-top: 10px;
+  color: white;
+  font: inherit;
+  font-size: 14px;
+  border: none;
+  border-radius: 7px;
+  background-color: $accent-color;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($accent-color, 0.8);
   }
+}
+
+.result-text {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.underlined {
+  font-size: 22px;
+  text-decoration-line: underline;
+}
+
+.ruler {
+  width: 100%;
 }

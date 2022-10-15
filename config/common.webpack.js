@@ -50,7 +50,7 @@ module.exports = {
   commonPlugins: [
     new HtmlWebpackPlugin({
       template: paths.src + '/template.html',
-      title: 'Webpack 5 & Vanilla JS boilerplate',
+      title: 'Автоматизация расчетов параметров работы грунтомета при тушении лесных пожаров',
       favicon: paths.src + '/img/favicon.svg',
       filename: 'index.html'
     }),
